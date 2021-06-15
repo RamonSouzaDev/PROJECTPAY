@@ -31,7 +31,7 @@ class TransactionsControllerTest extends TestCase
         $user = User::factory()->create();
         $payload = [
             'provider' => 'dsadsa',
-            'payee_id' => 'fodasenexiste',
+            'payee_id' => 'picpay',
             'amount' => 123
         ];
         $request = $this->actingAs($user, 'users')
@@ -46,7 +46,7 @@ class TransactionsControllerTest extends TestCase
         $user = User::factory()->create();
         $payload = [
             'provider' => 'users',
-            'payee_id' => 'fodasenexiste',
+            'payee_id' => 'picpay',
             'amount' => 123
         ];
         $request = $this->actingAs($user, 'users')
@@ -62,7 +62,7 @@ class TransactionsControllerTest extends TestCase
         $user = User::factory()->create();
         $payload = [
             'provider' => 'users',
-            'payee_id' => 'fodasenexiste',
+            'payee_id' => 'picpay',
             'amount' => 123
         ];
         $request = $this->actingAs($user, 'users')
@@ -78,7 +78,7 @@ class TransactionsControllerTest extends TestCase
         $user = Retailer::factory()->create();
         $payload = [
             'provider' => 'users',
-            'payee_id' => 'fodasenexiste',
+            'payee_id' => 'picpay',
             'amount' => 123
         ];
         $request = $this->actingAs($user, 'retailers')
